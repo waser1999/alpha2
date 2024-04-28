@@ -975,7 +975,7 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
@@ -992,7 +992,6 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
-  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1087,7 +1086,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.9431734
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1112,25 +1111,12 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.23, y: 0, z: -10}
+  m_LocalPosition: {x: -4.27, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ebe35b029ffe574eb5b0ce29175c651, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 0}
 --- !u!1 &603386098
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,10 +1255,10 @@ GameObject:
   - component: {fileID: 706448509}
   - component: {fileID: 706448508}
   - component: {fileID: 706448511}
-  - component: {fileID: 706448510}
   - component: {fileID: 706448513}
   - component: {fileID: 706448512}
   - component: {fileID: 706448514}
+  - component: {fileID: 706448510}
   m_Layer: 0
   m_Name: Fiona
   m_TagString: Untagged
@@ -1340,8 +1326,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706448507}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.94, y: -4.64, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.5700002, y: -4.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1359,7 +1345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ebe35b029ffe574eb5b0ce29175c651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  walkSpeed: 300
 --- !u!50 &706448511
 Rigidbody2D:
   serializedVersion: 4
@@ -1399,6 +1385,7 @@ Animation:
   m_Animation: {fileID: 2667949614841947897, guid: 3c9ee49742e236c478e6582034ad0c5a, type: 3}
   m_Animations:
   - {fileID: -3100369314251171874, guid: 3c9ee49742e236c478e6582034ad0c5a, type: 3}
+  - {fileID: 2667949614841947897, guid: 3c9ee49742e236c478e6582034ad0c5a, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
