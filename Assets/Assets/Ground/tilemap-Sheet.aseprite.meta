@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: 504c40b6ec23541429ad33d32d5b6788
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 0
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 0
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638499312089261837
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: tilemap-Sheet
+    originalName: 
+    pivot: {x: 0.4343434, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 198
+      height: 16
+    spriteID: 3c11f698a65c06c49a847cb500a402ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -22, y: 4}
+  spriteSheetImportData:
+  - name: tilemap-Sheet_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 16
+      height: 16
+    spriteID: 0692d27598d97d34a82b752dead37fd6
+    spriteBone: []
+    spriteOutline:
+    - outline:
+      - {x: -8, y: 8}
+      - {x: -8, y: -8}
+      - {x: -2, y: -8}
+      - {x: 8, y: 1}
+      - {x: 8, y: 8}
+    vertices: []
+    spritePhysicsOutline:
+    - outline:
+      - {x: -8, y: 8}
+      - {x: -8, y: -8}
+      - {x: -6, y: -8}
+      - {x: -1, y: 0}
+      - {x: 8, y: 5}
+      - {x: 8, y: 8}
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: tilemap-Sheet_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 4
+      width: 16
+      height: 16
+    spriteID: 538b3320fa3c9cf4fa2b8a63c17f81b3
+    spriteBone: []
+    spriteOutline:
+    - outline:
+      - {x: -8, y: 8}
+      - {x: -8, y: 1}
+      - {x: 8, y: 1}
+      - {x: 8, y: 8}
+    vertices: []
+    spritePhysicsOutline:
+    - outline:
+      - {x: -8, y: 8}
+      - {x: -8, y: 3}
+      - {x: 8, y: 3}
+      - {x: 8, y: 8}
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: tilemap-Sheet_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 4
+      width: 16
+      height: 16
+    spriteID: 3744c2bd3a7fadf42b24a35559cb05c3
+    spriteBone: []
+    spriteOutline:
+    - outline:
+      - {x: -8, y: 8}
+      - {x: -8, y: 1}
+      - {x: 2, y: -8}
+      - {x: 8, y: -8}
+      - {x: 8, y: 8}
+    vertices: []
+    spritePhysicsOutline:
+    - outline:
+      - {x: -8, y: 8}
+      - {x: -8, y: 5}
+      - {x: 2, y: 1}
+      - {x: 6, y: -8}
+      - {x: 8, y: -8}
+      - {x: 8, y: 8}
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: tilemap-Sheet_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 4
+      width: 16
+      height: 16
+    spriteID: c2a787ed1729536469040c97f403697a
+    spriteBone: []
+    spriteOutline:
+    - outline:
+      - {x: 2, y: 8}
+      - {x: 2, y: -8}
+      - {x: 8, y: -8}
+      - {x: 8, y: 8}
+    vertices: []
+    spritePhysicsOutline:
+    - outline:
+      - {x: 4, y: 8}
+      - {x: 4, y: -8}
+      - {x: 8, y: -8}
+      - {x: 8, y: 8}
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: tilemap-Sheet_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 4
+      width: 16
+      height: 16
+    spriteID: 04983e82a9316684ab97ad647986b222
+    spriteBone: []
+    spriteOutline:
+    - outline:
+      - {x: 1, y: 8}
+      - {x: -8, y: 3}
+      - {x: -8, y: -8}
+      - {x: 8, y: -8}
+      - {x: 8, y: 8}
+    vertices: []
+    spritePhysicsOutline:
+    - outline:
+      - {x: 5, y: 8}
+      - {x: 4, y: 1}
+      - {x: -8, y: 1}
+      - {x: -8, y: -8}
+      - {x: 8, y: -8}
+      - {x: 8, y: 8}
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: tilemap-Sheet_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 134
+      y: 4
+      width: 16
+      height: 16
+    spriteID: 93f032dca72f4ed408b2d5375d19831d
+    spriteBone: []
+    spriteOutline:
+    - outline:
+      - {x: -2, y: -8}
+      - {x: -2, y: 8}
+      - {x: -8, y: 8}
+      - {x: -8, y: -8}
+    vertices: []
+    spritePhysicsOutline:
+    - outline:
+      - {x: -4, y: -8}
+      - {x: -4, y: 8}
+      - {x: -8, y: 8}
+      - {x: -8, y: -8}
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: tilemap-Sheet_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 4
+      width: 16
+      height: 16
+    spriteID: 1bb7730c5941fc9498e354f3e9a4997f
+    spriteBone: []
+    spriteOutline:
+    - outline:
+      - {x: -8, y: 8}
+      - {x: -8, y: -8}
+      - {x: 8, y: -8}
+      - {x: 8, y: 3}
+      - {x: -1, y: 8}
+    vertices: []
+    spritePhysicsOutline:
+    - outline:
+      - {x: -8, y: 8}
+      - {x: -8, y: -8}
+      - {x: 8, y: -8}
+      - {x: 8, y: 0}
+      - {x: -2, y: 0}
+      - {x: -6, y: 8}
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: tilemap-Sheet_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 4
+      width: 16
+      height: 16
+    spriteID: 7224daef252d7334584507aede53f4a7
+    spriteBone: []
+    spriteOutline:
+    - outline:
+      - {x: -8, y: -8}
+      - {x: 8, y: -8}
+      - {x: 8, y: 1}
+      - {x: -8, y: 1}
+    vertices: []
+    spritePhysicsOutline:
+    - outline:
+      - {x: -8, y: -8}
+      - {x: 8, y: -8}
+      - {x: 8, y: 1}
+      - {x: -8, y: 1}
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: tilemap-Sheet_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 2
+      width: 210
+      height: 24
+    spriteID: faa5aca8d23aa6c4cb66afa879d7b764
+    spriteBone: []
+    spriteOutline:
+    - outline:
+      - {x: -86, y: 8}
+      - {x: -102, y: 8}
+      - {x: -104, y: 6}
+      - {x: -104, y: -11}
+      - {x: -102, y: -12}
+      - {x: -95, y: -12}
+      - {x: -84, y: -1}
+      - {x: -84, y: 6}
+    - outline:
+      - {x: -52, y: 8}
+      - {x: -52, y: -6}
+      - {x: -40, y: -12}
+      - {x: -32, y: -12}
+      - {x: -32, y: 8}
+    - outline:
+      - {x: -14, y: -12}
+      - {x: -6, y: -12}
+      - {x: -6, y: 6}
+      - {x: -7, y: 8}
+      - {x: -14, y: 8}
+    - outline:
+      - {x: 18, y: 8}
+      - {x: 10, y: 8}
+      - {x: 0, y: 1}
+      - {x: 0, y: -12}
+      - {x: 20, y: -12}
+      - {x: 20, y: 7}
+    - outline:
+      - {x: 28, y: 8}
+      - {x: 26, y: 6}
+      - {x: 26, y: -10}
+      - {x: 28, y: -12}
+      - {x: 32, y: -12}
+      - {x: 34, y: -10}
+      - {x: 34, y: 6}
+      - {x: 32, y: 8}
+    - outline:
+      - {x: 52, y: 8}
+      - {x: 52, y: -12}
+      - {x: 72, y: -12}
+      - {x: 72, y: 4}
+      - {x: 58, y: 8}
+    - outline:
+      - {x: 80, y: 1}
+      - {x: 78, y: -1}
+      - {x: 78, y: -10}
+      - {x: 80, y: -12}
+      - {x: 96, y: -12}
+      - {x: 98, y: -10}
+      - {x: 98, y: -1}
+      - {x: 96, y: 1}
+    - outline:
+      - {x: -76, y: 8}
+      - {x: -78, y: 6}
+      - {x: -78, y: 1}
+      - {x: -76, y: -1}
+      - {x: -58, y: -1}
+      - {x: -58, y: 8}
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1020653278
+    name: tilemap-Sheet
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: tilemap-Sheet
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 224
+        height: 16
+      spriteId: 3c11f698a65c06c49a847cb500a402ea
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 224, y: 16}
