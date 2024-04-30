@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638498423624647756
+  platformSettingsDirtyTick: 638500126054196799
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -129,7 +129,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 35
+      y: 4
       width: 12
       height: 23
     spriteID: d171ab5d407350548a1b1d8ff945fcdf
@@ -140,7 +140,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 35}
+    uvTransform: {x: 4, y: 4}
   - name: Fiona_Frame_1
     originalName: 
     pivot: {x: 0.5, y: -0.13043478}
@@ -149,7 +149,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 66
+      y: 35
       width: 12
       height: 23
     spriteID: f596a484a3f28c44cadfced61c84b46a
@@ -160,7 +160,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 66}
+    uvTransform: {x: 4, y: 35}
   - name: Fiona_Frame_2
     originalName: 
     pivot: {x: 0.5, y: -0.13636364}
@@ -168,7 +168,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 45
+      x: 44
       y: 35
       width: 12
       height: 22
@@ -180,7 +180,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 45, y: 35}
+    uvTransform: {x: 44, y: 35}
   - name: Fiona_Frame_3
     originalName: 
     pivot: {x: 0.5, y: -0.13043478}
@@ -189,7 +189,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 97
+      y: 66
       width: 12
       height: 23
     spriteID: a268be5d5711d7c45b679388e2aae086
@@ -200,7 +200,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 97}
+    uvTransform: {x: 4, y: 66}
   - name: Fiona_Frame_4
     originalName: 
     pivot: {x: 0.5, y: -0.13043478}
@@ -208,8 +208,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 25
-      y: 4
+      x: 4
+      y: 97
       width: 12
       height: 23
     spriteID: 409d2da2961170a42acf95667b6d2c30
@@ -220,7 +220,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 25, y: 4}
+    uvTransform: {x: 4, y: 97}
   - name: Fiona_Frame_5
     originalName: 
     pivot: {x: 0.5, y: -0.13043478}
@@ -228,8 +228,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 25
-      y: 35
+      x: 24
+      y: 4
       width: 12
       height: 23
     spriteID: 5bafca74d4a28a749af70c9cf253bff3
@@ -240,7 +240,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 25, y: 35}
+    uvTransform: {x: 24, y: 4}
   - name: Fiona_Frame_6
     originalName: 
     pivot: {x: 0.5833334, y: -0.13043478}
@@ -248,8 +248,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 25
-      y: 66
+      x: 24
+      y: 35
       width: 12
       height: 23
     spriteID: 3879dd94c85008b4881696ceadb4b569
@@ -260,7 +260,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 25, y: 66}
+    uvTransform: {x: 24, y: 35}
   - name: Fiona_Frame_7
     originalName: 
     pivot: {x: 0.5833334, y: -0.13043478}
@@ -268,8 +268,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 25
-      y: 97
+      x: 24
+      y: 66
       width: 12
       height: 23
     spriteID: 12561eb715edbd944856853a40103c21
@@ -280,7 +280,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 25, y: 97}
+    uvTransform: {x: 24, y: 66}
   - name: Fiona_Frame_8
     originalName: 
     pivot: {x: 0.5833334, y: -0.13043478}
@@ -288,8 +288,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 45
-      y: 4
+      x: 24
+      y: 97
       width: 12
       height: 23
     spriteID: 2b560c5e9f3aaa6409cb87b047ca0991
@@ -300,17 +300,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 45, y: 4}
+    uvTransform: {x: 24, y: 97}
   - name: Fiona_Frame_9
     originalName: 
-    pivot: {x: 0.53846157, y: -0.13043478}
+    pivot: {x: 0.5, y: -0.13043478}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 44
       y: 4
-      width: 13
+      width: 12
       height: 23
     spriteID: 292657e3bc9e3b540af6cc83e3f1d631
     spriteBone: []
@@ -320,7 +320,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 44, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -415,9 +415,9 @@ ScriptedImporter:
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
-        x: 9
+        x: 10
         y: 3
-        width: 13
+        width: 12
         height: 23
       spriteId: 292657e3bc9e3b540af6cc83e3f1d631
     linkedCells: []
