@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 288195533}
   - component: {fileID: 288195535}
   - component: {fileID: 288195534}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1326,7 +1326,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 4.9431734
+  orthographic size: 4.5535526
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1351,7 +1351,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.27, y: 0, z: -10}
+  m_LocalPosition: {x: 3.44, y: -0.93, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1500,7 +1500,7 @@ GameObject:
   - component: {fileID: 706448510}
   m_Layer: 0
   m_Name: Fiona
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1566,7 +1566,7 @@ Transform:
   m_GameObject: {fileID: 706448507}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5700002, y: -4.681, z: 0}
+  m_LocalPosition: {x: 2.37, y: -3.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1584,9 +1584,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ebe35b029ffe574eb5b0ce29175c651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 500
-  jumpForce: 6
-  jumpBuffer: 0.2
+  walkSpeed: 20
+  accelerateSpeed: 90
+  decelerateSpeed: 80
+  turnSpeed: 100
+  jumpSpeed: 8
+  jumpBuffer: 0.06
+  dropGravity: 18
 --- !u!50 &706448511
 Rigidbody2D:
   serializedVersion: 4
@@ -1602,7 +1606,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1667,8 +1671,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.046300054, y: 0.8277415}
-  m_Size: {x: 0.49635673, y: 1.280483}
+  m_Offset: {x: 0.046300054, y: -0.1838646}
+  m_Size: {x: 0.49635673, y: 1.2811947}
   m_Direction: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

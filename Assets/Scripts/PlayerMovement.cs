@@ -7,23 +7,34 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator animator;
-    public float walkSpeed;
-    public float jumpForce;
-    public float jumpBuffer;
 
+    [Header("Walk")]
+    public float walkSpeed;
+    public float accelerateSpeed;
+    public float decelerateSpeed;
+    public float turnSpeed;
+
+    [Header("Jump")]
+    public float jumpSpeed;
+    public float jumpBuffer;
+    public float dropGravity;
+
+    private float finalVelocity;
     private float jumpBufferCounter;
     private bool hasJumpBuffer = false;
+    private float defaultGravity;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        defaultGravity = rb.gravityScale;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.DrawRay(transform.position, Vector3.down, Color.red);
     }
 
     private void FixedUpdate()
@@ -32,12 +43,24 @@ public class PlayerMovement : MonoBehaviour
         Jump();
     }
 
+    private bool OnGround()
+    {
+        LayerMask ground = LayerMask.GetMask("Ground");
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1f, ground);
+
+        if(hit.collider != null)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
     private void Jump()
     {
         bool jumpPressed = Input.GetAxisRaw("Jump") != 0;
-        bool onGround = true;
 
-        if(jumpPressed && !hasJumpBuffer && onGround)
+        if(jumpPressed && !hasJumpBuffer && OnGround())
         {
             hasJumpBuffer = true;
             jumpBufferCounter = 0f;
@@ -45,33 +68,60 @@ public class PlayerMovement : MonoBehaviour
         
         if(hasJumpBuffer)
         {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            rb.velocity += Vector2.up * jumpSpeed;
             jumpBufferCounter += Time.deltaTime;
             
             if(jumpBufferCounter > jumpBuffer)
             {
                 hasJumpBuffer = false;
-                rb.velocity = new Vector2(rb.velocity.x, 0f);
-                rb.AddForce(Vector2.down * jumpForce * 2, ForceMode2D.Impulse);
             }
+        }
+
+        if (rb.velocity.y < 0f && this.OnGround() == false)
+        {
+            rb.gravityScale = dropGravity;
+        }else
+        {
+            rb.gravityScale = defaultGravity;
         }
     }
 
     private void Walk()
-    {
-        float direction = Input.GetAxisRaw("Horizontal");
-        float horizontal = Input.GetAxis("Horizontal");
+    {      
+        float xVelocity = Time.deltaTime;
+        float moveVelocity = rb.velocity.x;
+        int direction = Math.Sign(Input.GetAxisRaw("Horizontal"));
 
         if (direction != 0)
         {
-            float xVelocity = horizontal * walkSpeed * Time.deltaTime;
-            rb.velocity = new Vector2(xVelocity, rb.velocity.y);
-
             transform.localScale = new Vector3(direction * -1, transform.localScale.y, transform.localScale.z);
 
+            if (direction == Math.Sign(rb.velocity.x))
+            {
+                xVelocity *= accelerateSpeed;
+            }
+            else
+            {
+                xVelocity *= turnSpeed;
+            }
+
+            finalVelocity = walkSpeed * direction;
+        }
+        else
+        {
+            xVelocity *= decelerateSpeed;
+            finalVelocity = 0f;
+        }
+
+        moveVelocity = Mathf.MoveTowards(moveVelocity, finalVelocity, xVelocity);
+        rb.velocity = new Vector2(moveVelocity, rb.velocity.y);
+
+
+        if (rb.velocity.x != 0 && OnGround())
+        {
             animator.SetBool("isWalk", true);
         }
-        else if (rb.velocity.x == 0)
+        else
         {
             animator.SetBool("isWalk", false);
         }
