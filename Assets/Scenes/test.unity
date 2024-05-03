@@ -1912,7 +1912,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.37, y: -2.1939998, z: -10}
+  m_LocalPosition: {x: 2.37, y: -2.6278002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2093,6 +2093,7 @@ GameObject:
   - component: {fileID: 706448513}
   - component: {fileID: 706448514}
   - component: {fileID: 706448510}
+  - component: {fileID: 706448515}
   m_Layer: 0
   m_Name: Fiona
   m_TagString: Player
@@ -2269,6 +2270,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0.046300054, y: -0.1838646}
   m_Size: {x: 0.49635673, y: 1.2811947}
   m_Direction: 0
+--- !u!114 &706448515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706448507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c0f3b041bc85242960cc34600ad9e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1287840884
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,7 +2347,7 @@ Transform:
   m_GameObject: {fileID: 1287840884}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.37, y: -2.1939998, z: -10}
+  m_LocalPosition: {x: 2.37, y: -2.6278002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2399,24 +2412,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
-  m_LookaheadTime: 0.3
-  m_LookaheadSmoothing: 21.6
-  m_LookaheadIgnoreY: 1
+  m_LookaheadTime: 0
+  m_LookaheadSmoothing: 0
+  m_LookaheadIgnoreY: 0
   m_XDamping: 1.5
   m_YDamping: 1
   m_ZDamping: 0
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
-  m_ScreenY: 0.6
+  m_ScreenY: 0.57
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.36
-  m_DeadZoneHeight: 0.14
+  m_DeadZoneWidth: 0
+  m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.65
-  m_SoftZoneHeight: 0.77
+  m_SoftZoneHeight: 0.64
   m_BiasX: 0
-  m_BiasY: 0
+  m_BiasY: -0.334
   m_CenterOnActivate: 1
   m_GroupFramingMode: 2
   m_AdjustmentMode: 0

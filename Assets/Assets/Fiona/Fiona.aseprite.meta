@@ -128,8 +128,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 4
+      x: 100
+      y: 35
       width: 12
       height: 23
     spriteID: d171ab5d407350548a1b1d8ff945fcdf
@@ -140,7 +140,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 100, y: 35}
   - name: Fiona_Frame_1
     originalName: 
     pivot: {x: 0.5, y: 0.5652174}
@@ -149,7 +149,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 35
+      y: 66
       width: 12
       height: 23
     spriteID: f596a484a3f28c44cadfced61c84b46a
@@ -160,7 +160,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 35}
+    uvTransform: {x: 4, y: 66}
   - name: Fiona_Frame_2
     originalName: 
     pivot: {x: 0.5, y: 0.5909091}
@@ -169,7 +169,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 44
-      y: 35
+      y: 97
       width: 12
       height: 22
     spriteID: 24622a8e22fe0fe47bf56fe6bae9f49a
@@ -180,7 +180,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 44, y: 35}
+    uvTransform: {x: 44, y: 97}
   - name: Fiona_Frame_3
     originalName: 
     pivot: {x: 0.5, y: 0.5652174}
@@ -188,7 +188,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 24
       y: 66
       width: 12
       height: 23
@@ -200,7 +200,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 66}
+    uvTransform: {x: 24, y: 66}
   - name: Fiona_Frame_4
     originalName: 
     pivot: {x: 0.5, y: 0.5652174}
@@ -208,8 +208,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 97
+      x: 44
+      y: 66
       width: 12
       height: 23
     spriteID: 409d2da2961170a42acf95667b6d2c30
@@ -220,7 +220,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 97}
+    uvTransform: {x: 44, y: 66}
   - name: Fiona_Frame_5
     originalName: 
     pivot: {x: 0.5, y: 0.5652174}
@@ -228,8 +228,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 24
-      y: 4
+      x: 64
+      y: 66
       width: 12
       height: 23
     spriteID: 5bafca74d4a28a749af70c9cf253bff3
@@ -240,7 +240,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 24, y: 4}
+    uvTransform: {x: 64, y: 66}
   - name: Fiona_Frame_6
     originalName: 
     pivot: {x: 0.5833334, y: 0.5652174}
@@ -248,8 +248,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 24
-      y: 35
+      x: 84
+      y: 66
       width: 12
       height: 23
     spriteID: 3879dd94c85008b4881696ceadb4b569
@@ -260,7 +260,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 24, y: 35}
+    uvTransform: {x: 84, y: 66}
   - name: Fiona_Frame_7
     originalName: 
     pivot: {x: 0.5833334, y: 0.5652174}
@@ -268,7 +268,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 24
+      x: 104
       y: 66
       width: 12
       height: 23
@@ -280,7 +280,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 24, y: 66}
+    uvTransform: {x: 104, y: 66}
   - name: Fiona_Frame_8
     originalName: 
     pivot: {x: 0.5833334, y: 0.5652174}
@@ -288,7 +288,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 24
+      x: 4
       y: 97
       width: 12
       height: 23
@@ -300,7 +300,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 24, y: 97}
+    uvTransform: {x: 4, y: 97}
   - name: Fiona_Frame_9
     originalName: 
     pivot: {x: 0.5, y: 0.5652174}
@@ -308,8 +308,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 44
-      y: 4
+      x: 24
+      y: 97
       width: 12
       height: 23
     spriteID: 292657e3bc9e3b540af6cc83e3f1d631
@@ -320,7 +320,167 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 44, y: 4}
+    uvTransform: {x: 24, y: 97}
+  - name: Fiona_Frame_10
+    originalName: 
+    pivot: {x: 0.625, y: 0.5652174}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 98
+      y: 4
+      width: 16
+      height: 23
+    spriteID: 973ac75b00d37d34b89e62ce6e581e9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 98, y: 4}
+  - name: Fiona_Frame_11
+    originalName: 
+    pivot: {x: 0.625, y: 0.5652174}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 35
+      width: 16
+      height: 23
+    spriteID: 9a4604d0bc4671145885f558ecfa3db3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 35}
+  - name: Fiona_Frame_12
+    originalName: 
+    pivot: {x: 0.625, y: 0.5909091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 35
+      width: 16
+      height: 22
+    spriteID: 58afae6809a46ef4a95b939cd8aa7fd3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 35}
+  - name: Fiona_Frame_13
+    originalName: 
+    pivot: {x: 0.45454547, y: 0.5909091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 4
+      width: 22
+      height: 22
+    spriteID: 4caed790ffe3af04590c46e22ef20468
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 4}
+  - name: Fiona_Frame_14
+    originalName: 
+    pivot: {x: 0.52, y: 0.5652174}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 25
+      height: 23
+    spriteID: 9821b18a82c4c9341a3201a5f50e7fdb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Fiona_Frame_15
+    originalName: 
+    pivot: {x: 0.5652174, y: 0.5909091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 37
+      y: 4
+      width: 23
+      height: 22
+    spriteID: 2fc8f69746015b7408f9bd9962e58fb8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 37, y: 4}
+  - name: Fiona_Frame_16
+    originalName: 
+    pivot: {x: 0.4375, y: 0.5909091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 35
+      width: 16
+      height: 22
+    spriteID: 479c0a1496958b84eaa502c0d568c6f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 35}
+  - name: Fiona_Frame_17
+    originalName: 
+    pivot: {x: 0.625, y: 0.5909091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 35
+      width: 16
+      height: 22
+    spriteID: d8e000dc160299247a79ebc977459040
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 35}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -420,6 +580,78 @@ ScriptedImporter:
         width: 12
         height: 23
       spriteId: 292657e3bc9e3b540af6cc83e3f1d631
+    - name: Fiona_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 3
+        width: 16
+        height: 23
+      spriteId: 973ac75b00d37d34b89e62ce6e581e9c
+    - name: Fiona_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 3
+        width: 16
+        height: 23
+      spriteId: 9a4604d0bc4671145885f558ecfa3db3
+    - name: Fiona_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 3
+        width: 16
+        height: 22
+      spriteId: 58afae6809a46ef4a95b939cd8aa7fd3
+    - name: Fiona_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 3
+        width: 22
+        height: 22
+      spriteId: 4caed790ffe3af04590c46e22ef20468
+    - name: Fiona_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 3
+        y: 3
+        width: 25
+        height: 23
+      spriteId: 9821b18a82c4c9341a3201a5f50e7fdb
+    - name: Fiona_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 3
+        y: 3
+        width: 23
+        height: 22
+      spriteId: 2fc8f69746015b7408f9bd9962e58fb8
+    - name: Fiona_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 3
+        width: 16
+        height: 22
+      spriteId: 479c0a1496958b84eaa502c0d568c6f6
+    - name: Fiona_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 3
+        width: 16
+        height: 22
+      spriteId: d8e000dc160299247a79ebc977459040
     linkedCells: []
     parentIndex: -1
   platformSettings:
