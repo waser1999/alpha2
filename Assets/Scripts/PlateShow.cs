@@ -1,18 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class plateShow : MonoBehaviour
+public interface IPlateActive : IEventSystemHandler
 {
-    public GameObject redPlate;
+    void SwitchPlates();
+}
+
+public class PlateShow : MonoBehaviour, IPlateActive
+{
+    private static GameObject redPlate;
+    private static GameObject greenPlate;
+    public static bool greenActive = true;
+    public static bool redActive;
+
     void Start()
     {
         redPlate = GameObject.FindGameObjectWithTag("redPlate");
-        redPlate.SetActive(false);
+        greenPlate = GameObject.FindGameObjectWithTag("greenPlate");
+        greenActive = !redActive;
+        SwitchActive();
     }
 
-    void Update()
+    public static void SwitchActive()
     {
-        
+        redPlate.SetActive(redActive);
+        greenPlate.SetActive(greenActive);
+    }
+
+    public void SwitchPlates()
+    {
+        redActive = !redActive;
+        greenActive = !greenActive;
+        SwitchActive();
     }
 }
