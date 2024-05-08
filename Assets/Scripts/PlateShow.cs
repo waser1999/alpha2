@@ -10,23 +10,30 @@ public interface IPlateActive : IEventSystemHandler
 
 public class PlateShow : MonoBehaviour, IPlateActive
 {
-    private static GameObject redPlate;
-    private static GameObject greenPlate;
+    private static GameObject[] redPlate;
+    private static GameObject[] greenPlate;
     public static bool greenActive = true;
     public static bool redActive;
 
     void Start()
     {
-        redPlate = GameObject.FindGameObjectWithTag("redPlate");
-        greenPlate = GameObject.FindGameObjectWithTag("greenPlate");
+        redPlate = GameObject.FindGameObjectsWithTag("redPlate");
+        greenPlate = GameObject.FindGameObjectsWithTag("greenPlate");
         greenActive = !redActive;
         SwitchActive();
     }
 
     public static void SwitchActive()
     {
-        redPlate.SetActive(redActive);
-        greenPlate.SetActive(greenActive);
+        foreach (GameObject redObject in redPlate)
+        {
+            redObject.SetActive(redActive);
+        }
+
+        foreach (GameObject greenObject in greenPlate)
+        {
+            greenObject.SetActive(greenActive);
+        }
     }
 
     public void SwitchPlates()
