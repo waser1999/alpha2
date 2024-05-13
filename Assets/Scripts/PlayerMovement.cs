@@ -35,8 +35,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Debug.DrawRay(transform.position, Vector3.down, Color.red);
-    }
-
+    }    
     private void FixedUpdate()
     {
         Walk();
@@ -48,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         LayerMask ground = LayerMask.GetMask("Ground");
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1f, ground);
 
-        if(hit.collider != null)
+        if (hit.collider != null)
         {
             return true;
         }
@@ -60,18 +59,18 @@ public class PlayerMovement : MonoBehaviour
     {
         bool jumpPressed = Input.GetAxisRaw("Jump") != 0;
 
-        if(jumpPressed && !hasJumpBuffer && OnGround())
+        if (jumpPressed && !hasJumpBuffer && OnGround())
         {
             hasJumpBuffer = true;
             jumpBufferCounter = 0f;
         }
-        
-        if(hasJumpBuffer)
+
+        if (hasJumpBuffer)
         {
             rb.velocity += Vector2.up * jumpSpeed;
             jumpBufferCounter += Time.deltaTime;
-            
-            if(jumpBufferCounter > jumpBuffer)
+
+            if (jumpBufferCounter > jumpBuffer)
             {
                 hasJumpBuffer = false;
             }
@@ -80,14 +79,15 @@ public class PlayerMovement : MonoBehaviour
         if (rb.velocity.y < 0f && this.OnGround() == false)
         {
             rb.gravityScale = dropGravity;
-        }else
+        }
+        else
         {
             rb.gravityScale = defaultGravity;
         }
     }
 
     private void Walk()
-    {      
+    {
         float xVelocity = Time.deltaTime;
         float moveVelocity = rb.velocity.x;
         int direction = Math.Sign(Input.GetAxisRaw("Horizontal"));

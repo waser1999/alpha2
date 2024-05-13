@@ -15,7 +15,7 @@ public class SwitchTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             bool exists = ExecuteEvents.Execute<IPlateActive>(plate, null, (handler, data) => handler.SwitchPlates());
         }
