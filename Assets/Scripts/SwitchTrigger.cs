@@ -6,7 +6,7 @@ using static PlateShow;
 
 public class SwitchTrigger : MonoBehaviour
 {
-    public GameObject plate;
+    private GameObject plate;
 
     private void Start()
     {
@@ -17,7 +17,7 @@ public class SwitchTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            bool exists = ExecuteEvents.Execute<IPlateActive>(plate, null, (handler, data) => handler.SwitchPlates());
+            ExecuteEvents.Execute<IPlateActive>(plate, null, (handler, data) => handler.SwitchPlates());
         }
     }
 }
