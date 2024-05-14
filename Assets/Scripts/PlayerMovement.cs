@@ -67,10 +67,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (hasJumpBuffer)
         {
-            rb.velocity += Vector2.up * jumpSpeed;
-            jumpBufferCounter += Time.deltaTime;
+            if(jumpPressed){
+                rb.velocity += Vector2.up * jumpSpeed;
+                jumpBufferCounter += Time.deltaTime;
+            }
+            
 
-            if (jumpBufferCounter > jumpBuffer)
+            if (jumpBufferCounter > jumpBuffer || !jumpPressed)
             {
                 hasJumpBuffer = false;
             }
