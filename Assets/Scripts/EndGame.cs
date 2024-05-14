@@ -1,8 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class EndGame : MonoBehaviour
+public interface ICanvasController: IEventSystemHandler{
+    void HideCanvas();
+    void ShowCanvas();
+}
+
+public class EndGame : MonoBehaviour, ICanvasController
 {
     private CanvasGroup canvasGroup; 
     private PlayerMovement player;
@@ -30,7 +36,7 @@ public class EndGame : MonoBehaviour
         }
     }
 
-    private void HideCanvas(){
+    public void HideCanvas(){
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
@@ -39,7 +45,7 @@ public class EndGame : MonoBehaviour
         canvasVisible = false;
     }
 
-    private void ShowCanvas(){
+    public void ShowCanvas(){
         canvasGroup.alpha = 1;
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;

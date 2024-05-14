@@ -31,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
         defaultGravity = rb.gravityScale;
     }
 
-    // Update is called once per frame
     void Update()
     {
         Debug.DrawRay(transform.position, Vector3.down, Color.red);
