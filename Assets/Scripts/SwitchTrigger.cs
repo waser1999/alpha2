@@ -6,18 +6,18 @@ using static PlateShow;
 
 public class SwitchTrigger : MonoBehaviour
 {
-    private GameObject plate;
+    private PlateShow plate;
 
     private void Start()
     {
-        plate = GameObject.Find("Plates");
+        plate = GameObject.Find("Plates").GetComponent<PlateShow>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            ExecuteEvents.Execute<IPlateActive>(plate, null, (handler, data) => handler.SwitchPlates());
+            plate.SwitchPlates();
         }
     }
 }

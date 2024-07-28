@@ -15,7 +15,7 @@ public class EndGame : MonoBehaviour, ICanvasController
     private bool canvasVisible;
 
     private void Start() {
-        canvasGroup = GameObject.Find("Canvas").GetComponent<CanvasGroup>();
+        canvasGroup = GameObject.Find("UICanvas").GetComponent<CanvasGroup>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         HideCanvas();
     }
