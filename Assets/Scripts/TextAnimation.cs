@@ -26,7 +26,7 @@ public class TextAnimation : MonoBehaviour
 
     public void Exit()
     {
-        tMP_Text.maxVisibleCharacters = 0;
+        tMP_Text.enabled = false;
     }
 
     private IEnumerator Typewriter(TMP_Text tMP_Text, float delay)
