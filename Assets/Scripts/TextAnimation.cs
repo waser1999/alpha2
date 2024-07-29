@@ -8,7 +8,11 @@ using UnityEngine.UI;
 public class TextAnimation : MonoBehaviour
 {
     [Range(0, 1)]public float delay;
+    [Range(0, 1)]public float delayCursor = 0.5f;
+    public string text;
+    public string cursor = "|";
     private TMP_Text tMP_Text;
+    private bool cursorVisible = true;
 
     void Start()
     {
@@ -25,16 +29,32 @@ public class TextAnimation : MonoBehaviour
         tMP_Text.maxVisibleCharacters = 0;
     }
 
-    private IEnumerator Typewriter(TMP_Text text, float delay)
+    private IEnumerator Typewriter(TMP_Text tMP_Text, float delay)
     {
-        // 需要先渲染text才能正确统计字数
-        text.ForceMeshUpdate();
-        TMP_TextInfo textInfo = text.textInfo;
-        int textCount = textInfo.characterCount;
-        for (int i = 0; i < textCount; i++)
+        foreach (char c in text)
         {
-            text.maxVisibleCharacters = i;
+            if(tMP_Text.text.Length > 0 && cursor.Length > 0){
+                tMP_Text.text = tMP_Text.text.Remove(tMP_Text.text.Length - cursor.Length);
+            }
+            tMP_Text.text += c + cursor;
             yield return new WaitForSeconds(delay);
+        }
+
+        if(cursor.Length > 0){
+            StartCoroutine(CursorUpdate());
+        }
+    }
+
+    private IEnumerator CursorUpdate(){
+        while(true){
+            if(cursorVisible){
+                tMP_Text.text = tMP_Text.text.Remove(tMP_Text.text.Length - cursor.Length);
+            }
+            else{
+                tMP_Text.text += cursor;
+            }
+            cursorVisible = !cursorVisible;
+            yield return new WaitForSeconds(delayCursor);
         }
     }
 }
